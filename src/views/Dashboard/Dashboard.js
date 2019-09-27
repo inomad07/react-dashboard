@@ -25,11 +25,11 @@ import { getStyle, hexToRgba } from '@coreui/coreui/dist/js/coreui-utilities'
 
 const Widget03 = lazy(() => import('../../views/Widgets/Widget03'));
 
-const brandPrimary = getStyle('--primary')
-const brandSuccess = getStyle('--success')
-const brandInfo = getStyle('--info')
-const brandWarning = getStyle('--warning')
-const brandDanger = getStyle('--danger')
+const brandPrimary = getStyle('--primary');
+const brandSuccess = getStyle('--success');
+const brandInfo = getStyle('--info');
+const brandWarning = getStyle('--warning');
+const brandDanger = getStyle('--danger');
 
 // Card Chart 1
 const cardChartData1 = {
@@ -86,7 +86,7 @@ const cardChartOpts1 = {
       hoverRadius: 4,
     },
   }
-}
+};
 
 
 // Card Chart 2
@@ -453,31 +453,36 @@ const mainChartOpts = {
 };
 
 class Dashboard extends Component {
-  constructor(props) {
-    super(props);
+  // constructor(props) {
+  //   super(props);
+  //
+  //   this.toggle = this.toggle.bind(this);
+  //   this.onRadioBtnClick = this.onRadioBtnClick.bind(this);
+  //
+  //   this.state = {
+  //     dropdownOpen: false,
+  //     radioSelected: 2,
+  //   };
+  // }
 
-    this.toggle = this.toggle.bind(this);
-    this.onRadioBtnClick = this.onRadioBtnClick.bind(this);
+  state = {
+    dropdownOpen: false,
+    radioSelected: 2,
+  };
 
-    this.state = {
-      dropdownOpen: false,
-      radioSelected: 2,
-    };
-  }
-
-  toggle() {
+  toggle = () => {
     this.setState({
       dropdownOpen: !this.state.dropdownOpen,
     });
-  }
+  };
 
-  onRadioBtnClick(radioSelected) {
+  onRadioBtnClick = (radioSelected) => {
     this.setState({
       radioSelected: radioSelected,
     });
-  }
+  };
 
-  loading = () => <div className="animated fadeIn pt-1 text-center">Loading...</div>
+  loading = () => <div className="animated fadeIn pt-1 text-center">Loading...</div>;
 
   render() {
 

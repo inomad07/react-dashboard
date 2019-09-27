@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { Nav, NavItem, NavLink, Progress, TabContent, TabPane, ListGroup, ListGroupItem } from 'reactstrap';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
@@ -12,22 +12,26 @@ const defaultProps = {};
 
 class DefaultAside extends Component {
 
-  constructor(props) {
-    super(props);
+  // constructor(props) {
+  //   super(props);
+  //
+  //   this.toggle = this.toggle.bind(this);
+  //   this.state = {
+  //     activeTab: '1',
+  //   };
+  // }
 
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      activeTab: '1',
-    };
-  }
+  state = {
+    activeTab: '1',
+  };
 
-  toggle(tab) {
+  toggle = (tab) => {
     if (this.state.activeTab !== tab) {
       this.setState({
         activeTab: tab,
       });
     }
-  }
+  };
 
   render() {
 
@@ -35,7 +39,7 @@ class DefaultAside extends Component {
     const { children, ...attributes } = this.props;
 
     return (
-      <React.Fragment>
+      <Fragment>
         <Nav tabs>
           <NavItem>
             <NavLink className={classNames({ active: this.state.activeTab === '1' })}
@@ -306,7 +310,7 @@ class DefaultAside extends Component {
             <small className="text-muted">25GB/256GB</small>
           </TabPane>
         </TabContent>
-      </React.Fragment>
+      </Fragment>
     );
   }
 }
