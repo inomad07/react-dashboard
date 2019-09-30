@@ -34,7 +34,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:cov": "npm test -- --coverage --watchAll=false",
+    "test:debug": "react-scripts --inspect-brk test --runInBand",
     "eject": "react-scripts eject"
+  },
+  "bugs": {
+    "url": "https://github.com/Nomadkg/react-dashboard"
   },
   "eslintConfig": {
     "extends": "react-app"
