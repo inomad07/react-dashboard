@@ -5,7 +5,7 @@ import './polyfill'
 import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
-import { getAll } from './features/redux/actions';
+// import { getAll } from './features/redux/actions';
 import Store from './features/redux/store';
 import './index.css';
 import App from './app';
