@@ -2,7 +2,7 @@ import {getStyle} from "@coreui/coreui/dist/js/coreui-utilities";
 const brandPrimary = getStyle('--primary');
 const brandInfo = getStyle('--info');
 
-const cardChartData1 = {
+export const cardChartData1 = {
   labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
   datasets: [
     {
@@ -14,7 +14,7 @@ const cardChartData1 = {
   ],
 };
 
-const cardChartData2 = {
+export const cardChartData2 = {
   labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
   datasets: [
     {
@@ -26,7 +26,7 @@ const cardChartData2 = {
   ],
 };
 
-const cardChartData3 = {
+export const cardChartData3 = {
   labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
   datasets: [
     {
@@ -38,7 +38,7 @@ const cardChartData3 = {
   ],
 };
 
-const cardChartData4 = {
+export const cardChartData4 = {
   labels: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
   datasets: [
     {
@@ -49,10 +49,3 @@ const cardChartData4 = {
     },
   ],
 };
-
-export {
-  cardChartData1,
-  cardChartData2,
-  cardChartData3,
-  cardChartData4
-}

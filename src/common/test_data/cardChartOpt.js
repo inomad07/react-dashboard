@@ -1,6 +1,7 @@
 import { CustomTooltips } from "@coreui/coreui-plugin-chartjs-custom-tooltips";
-import { cardChartData1, cardChartData2 } from './cardChartData'
-const cardChartOpts1 = {
+import { cardChartData1, cardChartData2 } from './cardChartData';
+
+export const cardChartOpts1 = {
   tooltips: {
     enabled: false,
     custom: CustomTooltips
@@ -44,7 +45,7 @@ const cardChartOpts1 = {
   }
 };
 
-const cardChartOpts2 = {
+export const cardChartOpts2 = {
   tooltips: {
     enabled: false,
     custom: CustomTooltips
@@ -89,7 +90,7 @@ const cardChartOpts2 = {
   },
 };
 
-const cardChartOpts3 = {
+export const cardChartOpts3 = {
   tooltips: {
     enabled: false,
     custom: CustomTooltips
@@ -120,7 +121,7 @@ const cardChartOpts3 = {
   },
 };
 
-const cardChartOpts4 = {
+export const cardChartOpts4 = {
   tooltips: {
     enabled: false,
     custom: CustomTooltips
@@ -141,10 +142,3 @@ const cardChartOpts4 = {
       }],
   },
 };
-
-export {
-  cardChartOpts1,
-  cardChartOpts2,
-  cardChartOpts3,
-  cardChartOpts4
-}

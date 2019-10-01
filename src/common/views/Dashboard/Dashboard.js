@@ -21,9 +21,15 @@ import {
   Table,
 } from 'reactstrap';
 import { getStyle } from '@coreui/coreui/dist/js/coreui-utilities';
-import { cardChartOpts1, cardChartOpts2, cardChartOpts3, cardChartOpts4 } from '../../test_data/cardChartOpt';
-import { cardChartData1, cardChartData2, cardChartData3, cardChartData4 } from '../../test_data/cardChartData';
 import {
+  cardChartData1,
+  cardChartData2,
+  cardChartData3,
+  cardChartData4,
+  cardChartOpts1,
+  cardChartOpts2,
+  cardChartOpts3,
+  cardChartOpts4,
   socialBoxData,
   mainChart,
   sparkLineChartData,
