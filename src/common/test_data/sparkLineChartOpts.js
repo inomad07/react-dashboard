@@ -1,6 +1,6 @@
 import { CustomTooltips } from "@coreui/coreui-plugin-chartjs-custom-tooltips";
 
-const sparklineChartOpts = {
+const sparkLineChartOpts = {
   tooltips: {
     enabled: false,
     custom: CustomTooltips
@@ -33,4 +33,4 @@ const sparklineChartOpts = {
   },
 };
 
-export default sparklineChartOpts;
+export default sparkLineChartOpts;

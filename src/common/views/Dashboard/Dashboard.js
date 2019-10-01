@@ -21,19 +21,21 @@ import {
   Table,
 } from 'reactstrap';
 import { getStyle } from '@coreui/coreui/dist/js/coreui-utilities';
-import { cardChartOpts1, cardChartOpts2, cardChartOpts3, cardChartOpts4 } from '../../../test_data/cardChartOpt';
-import { cardChartData1, cardChartData2, cardChartData3, cardChartData4 } from '../../../test_data/cardChartData';
-import socialBoxData from "../../../test_data/socialBoxData";
-import mainChart from "../../../test_data/mainChart";
-import sparkLineChartData from "../../../test_data/sparkLineChartData";
-import sparklineChartOpts from "../../../test_data/sparklineChartOpts";
-import mainChartOpts from "../../../test_data/mainChartOpts";
-import socialChartOpts from "../../../test_data/socialChartOpts"
+import { cardChartOpts1, cardChartOpts2, cardChartOpts3, cardChartOpts4 } from '../../test_data/cardChartOpt';
+import { cardChartData1, cardChartData2, cardChartData3, cardChartData4 } from '../../test_data/cardChartData';
+import {
+  socialBoxData,
+  mainChart,
+  sparkLineChartData,
+  sparkLineChartOpts,
+  mainChartOpts,
+  socialChartOpts
+} from "../../test_data"
 
 const Widget03 = lazy(() => import('../Widgets/Widget03'));
 const brandPrimary = getStyle('--primary');
 const brandSuccess = getStyle('--success');
-const brandInfo = getStyle('--info');
+// const brandInfo = getStyle('--info');
 const brandWarning = getStyle('--warning');
 const brandDanger = getStyle('--danger');
 
@@ -318,7 +320,7 @@ class Dashboard extends Component {
                           <br />
                           <strong className="h4">9,123</strong>
                           <div className="chart-wrapper">
-                            <Line data={makeSparkLineData(0, brandPrimary)} options={sparklineChartOpts} width={100} height={30} />
+                            <Line data={makeSparkLineData(0, brandPrimary)} options={sparkLineChartOpts} width={100} height={30} />
                           </div>
                         </div>
                       </Col>
@@ -328,7 +330,7 @@ class Dashboard extends Component {
                           <br />
                           <strong className="h4">22,643</strong>
                           <div className="chart-wrapper">
-                            <Line data={makeSparkLineData(1, brandDanger)} options={sparklineChartOpts} width={100}
+                            <Line data={makeSparkLineData(1, brandDanger)} options={sparkLineChartOpts} width={100}
                                   height={30}/>
                           </div>
                         </div>
@@ -430,7 +432,7 @@ class Dashboard extends Component {
                           <br />
                           <strong className="h4">78,623</strong>
                           <div className="chart-wrapper">
-                            <Line data={makeSparkLineData(2, brandWarning)} options={sparklineChartOpts} width={100} height={30} />
+                            <Line data={makeSparkLineData(2, brandWarning)} options={sparkLineChartOpts} width={100} height={30} />
                           </div>
                         </div>
                       </Col>
@@ -440,7 +442,7 @@ class Dashboard extends Component {
                           <br />
                           <strong className="h4">49,123</strong>
                           <div className="chart-wrapper">
-                            <Line data={makeSparkLineData(3, brandSuccess)} options={sparklineChartOpts} width={100} height={30} />
+                            <Line data={makeSparkLineData(3, brandSuccess)} options={sparkLineChartOpts} width={100} height={30} />
                           </div>
                         </div>
                       </Col>
