@@ -5,14 +5,15 @@ import './polyfill'
 import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
-// import { getAll } from './features/redux/actions';
+import { actionCreators } from './features/redux/actions';
 import Store from './features/redux/store';
 import './index.css';
 import App from './app';
 // import * as serviceWorker from './serviceWorker';
 
 const store = Store();
-// store.dispatch(getAll);
+store.dispatch(actionCreators.getAll());
+// store.dispatch(actionCreators.add());
 
 render(
   <Provider store={store}>

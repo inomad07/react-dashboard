@@ -7,14 +7,20 @@ const initialData = {
 
 
 const rootReducer = (state = initialData, action) => {
-  switch (action.type) {
-    case types.GET_ALL: {
+  const { payload, type } = action;
+  switch (type) {
+    case types.GET_ALL_USERS: {
       return state = {
         ...state,
-        data: action.payload.data
+        data: payload.data
       };
     }
-
+    case types.ADD_USER: {
+      return state = {
+        ...state,
+        data: payload.data
+      };
+    }
     default:
       return state
   }
