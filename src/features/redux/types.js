@@ -1,3 +1,20 @@
-export default {
-  GET_ALL: "",
-}
+export const user = {
+  GET_USERS: "GET_USERS",
+  ADD_USER: "ADD_USER",
+  EDIT_USER: "EDIT_USER",
+  REMOVE_USER: "REMOVE_USER"
+};
+
+export const people = {
+  GET_PEOPLE: "GET_PEOPLE",
+  ADD_HUMAN: "ADD_HUMAN",
+  EDIT_HUMAN: "EDIT_HUMAN",
+  REMOVE_HUMAN: "REMOVE_HUMAN"
+};
+
+export const doctor = {
+  GET_DOCTORS: "GET_DOCTORS",
+  ADD_DOCTOR: "ADD_DOCTOR",
+  EDIT_DOCTOR: "EDIT_DOCTOR",
+  REMOVE_DOCTOR: "REMOVE_DOCTOR"
+};

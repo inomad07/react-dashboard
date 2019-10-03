@@ -1,18 +1,22 @@
 import 'react-app-polyfill/ie9'; // For IE 9-11 support
 import 'react-app-polyfill/stable';
 // import 'react-app-polyfill/ie11'; // For IE 11 support
-import './polyfill'
+import './polyfill';
 import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
-// import { getAll } from './features/redux/actions';
+import UserActions from './features/redux/actions/UserActions';
 import Store from './features/redux/store';
 import './index.css';
 import App from './app';
 // import * as serviceWorker from './serviceWorker';
 
 const store = Store();
-// store.dispatch(getAll);
+store.dispatch(UserActions.getAll());
+store.dispatch(UserActions.add());
+store.subscribe(() => {
+    console.log('Store updated!',store.getState());
+});
 
 render(
   <Provider store={store}>
